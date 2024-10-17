@@ -4,7 +4,8 @@ body {
   height: 100vh;
   width: 100%;
 
-  overflow: hidden;
+  overflow-x: hidden;
+
 
   background-color: rgb(23, 23, 23);
   font-family: 'Figtree';
@@ -19,8 +20,8 @@ main {
 
 #rouwtaak1 {
   position: absolute;
-  left: -10vh;
-  top: 22vh;
+  left: -1vh;
+  top: 0vh;
   height: 500px;
   width: 500px;
   z-index: -1;
@@ -28,11 +29,11 @@ main {
 
 #rouwtaak1mesh {
   position: absolute;
-  opacity: 95%;
-  left: -10vh;
-  top: 18vh;
-  height: 500px;
-  width: 500px;
+  left: 5vh;
+  top: 10vh;
+  height: 300px;
+  width: 300px;
+  filter: blur(70px);
   z-index: -1;
 }
 
@@ -48,12 +49,11 @@ main {
 
 /* ARTICLE */
 
-article{
+article {
   display: flex;
   flex-direction: column;
-  /* height: 100vh; */
-  /* max-width: 50vw; */
   justify-content: center;
+  padding: 2em;
 }
 
 /* ARTICLE TEXT */
@@ -68,7 +68,8 @@ article{
 
 article p {
   color: white;
-  font-size: 25px;
+  font-size: 22px;
+  text-shadow: 1px 1px 2px black;
 }
 
 /* ASIDE */
@@ -76,6 +77,8 @@ article p {
 aside {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  bottom: 0;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.436);
   padding: 2em;
@@ -92,15 +95,107 @@ aside a {
   width: max-content;
   color: white;
   border: 2px solid white;
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 30px;
+  padding: 15px;
   margin-top: 1em;
   text-decoration: none;
 }
 
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+
 @media (min-width:600px) {
+  body {
+    overflow: hidden;
+  }
   main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  article {
+    height: 100vh;
+    width: 50vw;
+  }
+
+  .titel {
+    align-self: start;
+  }
+
+  aside {
+    position: fixed;
+    right: 0;
+    width: 30vw;
+    height: 100vh;
+  }
+
+  aside p {
+    font-size: 18px;
+  }
+
+  #rouwtaak1 {
+    position: absolute;
+    left: -12vw;
+    top: 0;
+    height: 800px;
+    width: 800px;
+    z-index: -1;
+  }
+  
+  #rouwtaak1mesh {
+    position: absolute;
+    left: 0;
+    top: 15vh;
+    height: 500px;
+    width: 500px;
+    filter: blur(80px);
+    z-index: -1;
+  }
+}
+
+@media (min-width:800px) {
+  body {
+    overflow: hidden;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  article {
+    margin: 0;
+    height: 100vh;
+    width: 50vw;
+  }
+
+  .titel {
+    align-self: start;
+  }
+
+  aside {
+    position: fixed;
+    right: 0;
+    width: 30vw;
+    height: 100vh;
+  }
+
+  #rouwtaak1 {
+    position: absolute;
+    left: -12vw;
+    top: 0;
+    height: 800px;
+    width: 800px;
+    z-index: -1;
+  }
+  
+  #rouwtaak1mesh {
+    position: absolute;
+    left: 0;
+    top: 15vh;
+    height: 500px;
+    width: 500px;
+    filter: blur(80px);
+    z-index: -1;
   }
 }
