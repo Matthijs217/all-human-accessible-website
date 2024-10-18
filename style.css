@@ -77,9 +77,8 @@ article p {
 aside {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  bottom: 0;
   justify-content: center;
+  min-width: 17em;
   background-color: rgba(0, 0, 0, 0.436);
   padding: 2em;
 }
@@ -105,7 +104,7 @@ aside a {
 /* MEDIA QUERIES */
 /* MEDIA QUERIES */
 
-@media (min-width:600px) {
+@media (min-width:650px) {
   body {
     overflow: hidden;
   }
@@ -132,52 +131,6 @@ aside a {
 
   aside p {
     font-size: 18px;
-  }
-
-  #rouwtaak1 {
-    position: absolute;
-    left: -12vw;
-    top: 0;
-    height: 800px;
-    width: 800px;
-    z-index: -1;
-  }
-  
-  #rouwtaak1mesh {
-    position: absolute;
-    left: 0;
-    top: 15vh;
-    height: 500px;
-    width: 500px;
-    filter: blur(80px);
-    z-index: -1;
-  }
-}
-
-@media (min-width:800px) {
-  body {
-    overflow: hidden;
-  }
-  main {
-    display: flex;
-    flex-direction: row;
-  }
-
-  article {
-    margin: 0;
-    height: 100vh;
-    width: 50vw;
-  }
-
-  .titel {
-    align-self: start;
-  }
-
-  aside {
-    position: fixed;
-    right: 0;
-    width: 30vw;
-    height: 100vh;
   }
 
   #rouwtaak1 {
