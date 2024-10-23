@@ -4,9 +4,6 @@ body {
   height: 100vh;
   width: 100%;
 
-  overflow-x: hidden;
-
-
   background-color: rgb(23, 23, 23);
   font-family: 'Figtree';
 }
@@ -22,8 +19,8 @@ main {
   position: absolute;
   left: -1vh;
   top: 0vh;
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   z-index: -1;
 }
 
