@@ -7,6 +7,12 @@ body {
     overflow: hidden;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+
 header h1 {
     color: white;
     font-family: 'Calvino Grande Trial', sans-serif;
@@ -16,8 +22,11 @@ header h1 {
 }
 
 header img {
-    margin-left: 4vw;
-    margin-bottom: 4vh;
+    position: absolute;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    top: 15%;
 }
 
 main {

@@ -26,7 +26,6 @@
     }
 
     header h1 {
-        margin-top: 2vh;
         color: rgb(245, 245, 245);
         font-family: 'Calvino Grande Trial';
         font-size: 50px;
@@ -36,8 +35,11 @@
     }
 
     header img {
-        margin-left: 4vw;
-        margin-bottom: 4vh;
+        position: absolute;
+        width: 100%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        top: 15%;
     }
 
 /* ARTICLE */
