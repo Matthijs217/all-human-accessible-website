@@ -243,3 +243,27 @@ footer #overslaanknop {
     filter: blur(12em);
     z-index: -1;
 }
+
+@media (min-width: 380px) {
+    header h1 {
+        font-size: 60px;
+    }
+    header img {
+        margin-top: 2em;
+    }
+    main h2 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 680px) {
+    header h1 {
+        font-size: 70px;
+    }
+    header img {
+        margin-top: 4em;
+    }
+    main h2 {
+        font-size: 30px;
+    }
+}
