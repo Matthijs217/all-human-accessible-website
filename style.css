@@ -18,7 +18,7 @@ main {
 #rouwtaak1 {
   position: absolute;
   left: -1vh;
-  top: 0vh;
+  top: 0;
   height: 400px;
   width: 400px;
   z-index: -1;
@@ -139,7 +139,7 @@ aside a:hover {
   #rouwtaak1 {
     position: absolute;
     left: -12vw;
-    top: 0;
+    top: 10%;
     height: 800px;
     width: 800px;
     z-index: -1;
@@ -147,8 +147,8 @@ aside a:hover {
   
   #rouwtaak1mesh {
     position: absolute;
-    left: 0;
-    top: 15vh;
+    left: -2%;
+    top: 20%;
     height: 500px;
     width: 500px;
     filter: blur(80px);
