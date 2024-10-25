@@ -240,7 +240,7 @@ footer #overslaanknop {
     left: 0;
     height: 35em;
     width: 35em;
-    filter: blur(12em);
+    filter: blur(13em);
     z-index: -1;
 }
 
